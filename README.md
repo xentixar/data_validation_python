@@ -37,8 +37,8 @@ python example.py
 
 ```python
 data = {
-    'name' => 'John',
-    'email' => 'test@gmail.com',
+    'name' : 'John',
+    'email' : 'test@gmail.com',
 }
 validator = Validator(data);
 ```
@@ -47,8 +47,8 @@ validator = Validator(data);
 
 ```python
 validated = validator->validate([
-    'name' => 'required|max:100',
-    'email' => 'required|email|max:100',
+    'name' : 'required|max:100',
+    'email' : 'required|email|max:100',
 ])
 ```
 
@@ -56,14 +56,14 @@ validated = validator->validate([
 
 The module supports the following validation rules:
 
-* 'required' => Field must be present in the form data.
-* 'email' =>  Field must be a valid email address.
-* 'number' =>  Field must be a number.
-* 'image' =>  Field must be a valid email image.
-* 'max:m' =>  Maximum length for strings or maximum value for numbers.
-* 'min:n' =>  Minimum length for strings or minimum value for numbers.
-* 'in:something,something_else' =>  Field must be a value present in the data.
-* 'alpha_dash' => Field can only contain alpha-numeric, underscores and dashes.
+* 'required' : Field must be present in the form data.
+* 'email' :  Field must be a valid email address.
+* 'number' :  Field must be a number.
+* 'image' :  Field must be a valid email image.
+* 'max:m' :  Maximum length for strings or maximum value for numbers.
+* 'min:n' :  Minimum length for strings or minimum value for numbers.
+* 'in:something,something_else' :  Field must be a value present in the data.
+* 'alpha_dash' : Field can only contain alpha-numeric, underscores and dashes.
 
 Image Validation is only available for form data.
 
