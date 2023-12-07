@@ -40,16 +40,16 @@ data = {
     'name' : 'John',
     'email' : 'test@gmail.com',
 }
-validator = Validator(data);
+validator = Validator(data)
 ```
 
 2. Add validation rules using the validate method.
 
 ```python
-validated = validator->validate([
+validated = validator.validate({
     'name' : 'required|max:100',
     'email' : 'required|email|max:100',
-])
+})
 ```
 
 ## Validation Rules
